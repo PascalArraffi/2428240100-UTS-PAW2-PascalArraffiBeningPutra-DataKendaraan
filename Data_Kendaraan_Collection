@@ -1,0 +1,113 @@
+{
+  "info": {
+    "_postman_id": "0537fd0a-aae7-41fa-856a-77edba857fd3",
+    "name": "my_data_kendaraan",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58519292",
+    "_collection_link": "https://go.postman.co/collection/58519292-0537fd0a-aae7-41fa-856a-77edba857fd3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Menambahkan Data Kendaraan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nomor_kendaraan\": \"BG 1234 AEA\",\r\n  \"brand\": \"Toyota\",\r\n  \"tipe_kendaraan\": \"Matic\",\r\n  \"tahun_produksi\": \"2025\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/data-kendaraan",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "data-kendaraan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Menampilkan Seluruh Data Kendaraan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Menampilkan Detail Data Kendaraan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Memperbarui Data Kendaraan",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nomor_kendaraan\": \"BG 4567 AEA\",\r\n  \"brand\": \"Honda\",\r\n  \"tipe_kendaraan\": \"Manual\",\r\n  \"tahun_produksi\": \"2021\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/data-kendaraan/6aedb49ecbb7e9db035c15f2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "data-kendaraan",
+            "6aedb49ecbb7e9db035c15f2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Menghapus Data Kendaraan",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/data-kendaraan/6aedb49ecbb7e9db035c15f2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "data-kendaraan",
+            "6aedb49ecbb7e9db035c15f2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
